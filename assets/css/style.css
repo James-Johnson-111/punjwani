@@ -1,0 +1,242 @@
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+  background: #F3FAFB; 
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1CCDB2; 
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0B4966; 
+}
+
+.sec_headings {
+    text-align: center;
+    font-family: Poppins;
+    margin: 50px 0;
+    font-size: 60px;
+}
+
+.TopBar {
+    width: 100%;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 0 50px;
+    font-family: Poppins;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.TopBar .elements {
+    cursor: pointer;
+    color: #087981;
+}
+
+.TopBar img {
+    width: 120px;
+}
+
+.TopBar i {
+    font-size: 30px;
+}
+
+.TopBar span {
+    font-size: 20px;
+    padding: 0 5px;
+}
+
+.slider {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider .content {
+    position: absolute;
+    width: 70%;
+}
+
+.slider .content h1 {
+    font-size: 70px;
+    color: #fff;
+    font-family: PoiretOne;
+    font-weight: bolder;
+    text-shadow: 0 0 2px #000;
+}
+
+.about {
+    width: 100%;
+}
+
+.about .aboutImg {
+    width: 70%;
+    animation: upDown 1s ease-in-out infinite forwards alternate;
+}
+
+@keyframes upDown {
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+.about h1 {
+    font-family: JosefinSans;
+}
+
+.about p {
+    width: 70%;
+    font-family: Quicksand;
+    background-color: rgb(232, 246, 247, .5);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.about p a {
+    color: #0B4966;
+    font-weight: bold;
+}
+
+.ideas {
+    position: relative;
+    font-family: JosefinSans;
+    background-color: rgb(232, 246, 247, .3);
+    overflow: hidden;
+}
+
+.ideas .ideas_back_image {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top: calc( 50% - 25% );
+    left: calc( 50% - 25% );
+    border: none !important;
+    opacity: .08;
+}
+
+.ideas img {
+    border: 5px solid #8C9694;
+    width: 60%;
+    height: 200px;
+    margin-bottom: 30px;
+}
+
+.ideas .ideas_first_image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-bottom: 0;
+}
+
+.WhyUs {
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+    font-family: Quicksand;
+}
+
+.WhyUs .divs {
+    width: 100%;
+    padding: 50px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.WhyUs .divs i {
+    font-size: 50px;
+    padding: 30px;
+    border: 1px solid #1CCDB2;
+    color: #1CCDB2;
+    border-radius: 50%;
+    transition: .5s;
+    margin-bottom: 25px;
+}
+
+.WhyUs .divs i:hover {
+    transform: rotate(360deg);
+    background-color: #0B4966;
+    color: #fff;
+}
+
+.WhyUs .divs h4 {
+    font-family: Poppins;
+}
+
+.WorkCount {
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+    background-image: url('../images/O81GBA0.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.WorkCount::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, .5);
+}
+
+.WorkCount .content {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    z-index: 1;
+}
+
+.WorkCount .content .divs {
+    width: 25%;
+    /* background-color: #1CCDB2; */
+    color: #fff;
+    padding: 70px 0;
+    text-align: center;
+    font-family: Poppins;
+}
+
+.WorkCount .content .divs h6 {
+    font-family: JosefinSans;
+}
+
+.footer {
+    font-family: Quicksand;
+}
+
+.footer .footerImg {
+    width: 50%;
+}
+
+.footer .icons i {
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    margin: 0 10px;
+}
